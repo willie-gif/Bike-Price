@@ -1,0 +1,9 @@
+streamlit
+pickle
+numpy
+pandas
+FPDF
+io
+datetime
+timedelta
+option_menu
