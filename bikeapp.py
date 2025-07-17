@@ -21,7 +21,7 @@ data = load_model()
 model = data["regressor"]
 scaler = data["scaler"]
 
-# Initialize session state to store predictions
+## Initialize session state to store predictions
 if "data" not in st.session_state:
     st.session_state.data = pd.DataFrame(columns=["Date", "Product Name", "Quantity", "Unit Cost", "Profit", "Total Cost", "Revenue", "Predicted Price"])
 
