@@ -5,5 +5,4 @@ pandas
 fpdf
 io
 datetime
-timedelta
-option_menu
+streamlit_option_menu
