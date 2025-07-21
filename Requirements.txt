@@ -2,7 +2,7 @@ streamlit
 pickle
 numpy
 pandas
-FPDF
+fpdf
 io
 datetime
 timedelta
