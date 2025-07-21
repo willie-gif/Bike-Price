@@ -13,7 +13,7 @@ st.set_page_config(page_title="Bike Prices", layout="wide", page_icon="🚴")
 
 # Load model and scaler
 def load_model():
-    with open(r"C:\Users\User\bike.pkl", "rb") as file:
+    with open("bike.pkl", "rb") as file:
         data = pickle.load(file)
     return data
 
