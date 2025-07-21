@@ -1,8 +1,8 @@
 streamlit
-pickle
 numpy
 pandas
 fpdf
-io
-datetime
-streamlit_option_menu
+openpyxl
+scikit-learn
+streamlit-option-menu
+
