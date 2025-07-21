@@ -1,9 +1,0 @@
-streamlit
-pickle
-numpy
-pandas
-fpdf
-io
-datetime
-timedelta
-option_menu
