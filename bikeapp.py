@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
-#from fpdf import FPDF 
+from fpdf import FPDF 
 import io
 from datetime import datetime, timedelta
 from streamlit_option_menu import option_menu 
