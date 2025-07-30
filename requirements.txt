@@ -4,6 +4,8 @@ pandas
 openpyxl
 scikit-learn
 streamlit-option-menu
+fpdf2
+
 
 
 
