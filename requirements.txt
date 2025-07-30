@@ -3,7 +3,7 @@ numpy
 pandas
 fpdf2
 openpyxl
-scikit-learn
+scikit-learn==1.2.2
 streamlit-option-menu
 
 
