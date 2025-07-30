@@ -1,10 +1,8 @@
 streamlit
-numpy==1.24.3
+scikit-learn
 pandas
-openpyxl
-scikit-learn==1.2.2
-streamlit-option-menu
-fpdf2
+numpy
+
 
 
 
