@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 from fpdf import FPDF
 import io
+import os
 from datetime import datetime, timedelta
 from streamlit_option_menu import option_menu 
 
@@ -13,9 +14,12 @@ st.set_page_config(page_title="Bike Prices", layout="wide", page_icon="🚴")
 
 # Load model and scaler
 def load_model():
-    with open("bike.pkl", "rb") as file:
-        data = pickle.load(file)
-    return data
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(current_dir, "bike_price", "bike.pkl")
+
+    with open(model_path, "rb") as file:
+        return pickle.load(file)
+
 
 data = load_model()
 model = data["regressor"]
@@ -141,5 +145,6 @@ elif selected == "Details":
             "Predicted Price": bike[0]
         }
         st.session_state.data = pd.concat([st.session_state.data, pd.DataFrame([new_row])], ignore_index=True)
+
 
 
