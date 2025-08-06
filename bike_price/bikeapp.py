@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
-from fpdf2 import FPDF
+from fpdf import FPDF
 import io
 from datetime import datetime, timedelta
 from streamlit_option_menu import option_menu 
@@ -141,4 +141,5 @@ elif selected == "Details":
             "Predicted Price": bike[0]
         }
         st.session_state.data = pd.concat([st.session_state.data, pd.DataFrame([new_row])], ignore_index=True)
+
 
