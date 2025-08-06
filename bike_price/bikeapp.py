@@ -15,8 +15,7 @@ st.set_page_config(page_title="Bike Prices", layout="wide", page_icon="🚴")
 # Load model and scaler
 def load_model():
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    model_path = os.path.join(current_dir, "bike_price", "bike.pkl")
-
+    model_path = os.path.join(current_dir, "bike.pkl")
     with open(model_path, "rb") as file:
         return pickle.load(file)
 
@@ -145,6 +144,7 @@ elif selected == "Details":
             "Predicted Price": bike[0]
         }
         st.session_state.data = pd.concat([st.session_state.data, pd.DataFrame([new_row])], ignore_index=True)
+
 
 
 
